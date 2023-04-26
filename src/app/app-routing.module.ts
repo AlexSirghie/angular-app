@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EmployeesListComponent } from './employees/employees-list/employees-list.component';
+import {LoginComponent} from "./login/login-component";
+import {RegisterComponent} from "./register/register-component";
 
 const routes: Routes = [
-  { path: "employees-list", component: EmployeesListComponent },
-  { path: "**", redirectTo: "employees-list" }
+  { path: "**", redirectTo: "employees-list" },
+  { path: "app-login", component: LoginComponent },
+  { path: "app-register", component: RegisterComponent },
 ];
 
 @NgModule({
