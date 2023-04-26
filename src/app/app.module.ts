@@ -7,6 +7,7 @@ import { EmployeesModule } from './employees/employees.module';
 import { FirstComponentComponent } from './first-component/first-component.component';
 import { SecondComponentComponent } from './second-component/second-component.component';
 import { ThirdComponentComponent } from './third-component/third-component.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ThirdComponentComponent } from './third-component/third-component.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    EmployeesModule
+    EmployeesModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
